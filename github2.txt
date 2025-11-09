@@ -5,10 +5,10 @@
 -to check the connectivity of remote repository in local- git remote -v
                                     -if the command show nothing that mean there is no connection 
 2. workflow of Git
- ------------------        ----------------------      ------------------         ---------------           -------------------      -------------------       --------
-|Git repository| --> | clone into local|-->|changes done| --->|  add all the|  ---> |commit with |--> | GIT initialize|--->|push|
-------------------       |    repository     |    --------------------       |  changes   |          |commands   |      -------------------       --------
-                              ----------------------                                    -----------------           ------------------
+----------------     -------------------       --------------     ---------------       --------------     ----------------       -------
+|Git repository| --> | clone into local|-->    |changes done| --->|  add all the|  ---> |commit with |--> | GIT initialize|--->    |push|
+----------------     |    repository   |       --------------     |  changes    |       |commands    |    ----------------         ------
+                     -------------------                          --------------        -------------
 3.Branches
 -when many developers work on a single repository ,we use git branch
 -each developer is design a branch to fill their work without disturbing our devepolers 's code.
