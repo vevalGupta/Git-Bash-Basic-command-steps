@@ -60,3 +60,13 @@ syntax-git branch -m newbranch_name
 6)push - upload local repository content to remote repository
 syntax- git push name(origin) main
 There is no need to write name after Ist time
+if push command does'nt work after pull then use (git push name(origin) main --force)
+7)pull - is used to download (fetch) new changes from a remote repository (like GitHub) and update your local repository with those changes.
+syntax- git pull name(origin) main
+pull mainly used when there is a need of updating local file from remote repository
+it is also used when push command shows error .
+  pull = fetch + merge 
+git fetch-Downloads the latest commits from the remote branch(Show me what's new on GitHub, but don't change my files yet)
+syntax- git fetch origin
+git merge- combines changes from one branch into another.
+syntax-git merge origin/main

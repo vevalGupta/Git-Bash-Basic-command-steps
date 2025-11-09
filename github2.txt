@@ -1,0 +1,6 @@
+                              Git Bash Addition information
+1.Changing local repository after  creating every new repository in github
+-after creation of file in local repository ,we have change repository by -(git clone <http url>)
+-to make connection of remote repository by-(git remote add name <SSH url>)
+-to check the connectivity of remote repository in local- git remote -v
+                                    -if the command show nothing that mean there is no connection 
