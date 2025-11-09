@@ -1,0 +1,62 @@
+                           Github
+-version control system (a tool to track changes in code)--GIT
+            Function of GIT
+-track the history  of code
+-categories the function(so that change can done particular section)
+-collaborate(many individual can work on a single project)
+             Working  of Github
+-store the file containing code in the form of folder
+folder->repository
+-creating repository(repository->new)
+-provide the information
+ .repository_name
+ .repository_type-public /private
+ .Add_README-the introduction and guide to your project
+ .Add .gitignore-tells Git which files or folders should not be tracked (i.e., not uploaded or committed to the repository)
+ .Add_license-tells others what they’re allowed (or not allowed) to do with your work
+-after creation,it will show a file name readme.md(md->mark done)
+-inital commit (time given)-time of changes make,change mean ->commit
+-For changes in readme(write text ,command in html),click on pen sighn and click commit
+-To manage git,download git bash
+                    process for saving in git
+           -----------       -------       -----------
+         |modified| -> |add| -> |commit|
+          -------------      -------       ----------
+                   Working of GitBash
+           ---------------------            ---------------------
+          |remote(Github)| -->     |local(pc/laptop)|
+          ----------------------            ---------------------
+some basic command use in GitBash
+1)Clone-cloning a repository on our locial machine
+remote[Github]-> local[pc/laptop]
+For link =press <>code-> click https, copy the link
+syntax-git clone link
+-to open the imported folder->cd file_name
+-to view all the file ->ls
+2)Status -display the status of the code
+syntax-git status
+   Type of status
+-untracked= new files that git doesn't track yet
+-modified= saved changes
+-unmodified=no changes made
+-staged= file read to be committed
+3)Add-add new or changed file into working directory in stage area
+- git add .(use add al files)
+syntax-gid add file_name
+4)commit-it is record of change(show change in local repository)
+syntax-git commit -m " some message"
+5)init- used to create a  new git repository(perform before push)
+syntax- git init
+-git add-to add remote repository with specific name
+syntax -git remote add origin link
+link=>press <>code->click SSH,then copy the link
+-To check remote repository
+syntax- git remote -v
+  branch=>A branch is like creating a side road where you can make changes, test new ideas, or fix bugs without affecting the main project.
+-To check the current branch 
+syntax- git branch
+-To rename the current branch 
+syntax-git branch -m newbranch_name
+6)push - upload local repository content to remote repository
+syntax- git push name(origin) main
+There is no need to write name after Ist time
