@@ -4,3 +4,38 @@
 -to make connection of remote repository by-(git remote add name <SSH url>)
 -to check the connectivity of remote repository in local- git remote -v
                                     -if the command show nothing that mean there is no connection 
+2. workflow of Git
+ ------------------        ----------------------      ------------------         ---------------           -------------------      -------------------       --------
+|Git repository| --> | clone into local|-->|changes done| --->|  add all the|  ---> |commit with |--> | GIT initialize|--->|push|
+------------------       |    repository     |    --------------------       |  changes   |          |commands   |      -------------------       --------
+                              ----------------------                                    -----------------           ------------------
+3.Branches
+-when many developers work on a single repository ,we use git branch
+-each developer is design a branch to fill their work without disturbing our devepolers 's code.
+-developer can merge two or more branches into one main branch
+                Command in branches:  
+a) git branch - to check the current branch we are working on.
+b) git branch -m name(main)- to rename the current  branch.
+c) git checkout branch_name - to changes current branch to another branch
+d) git branch -b new_branch_name =to create a new branch
+e) git branch -d branch_name - to delete the branch
+merge the Two branch
+    /          \
+    Git bash    Github
+1) git dff branch_name - to see the comparison between branches
+2) git merge branch_name - to merge branch with the main branch
+Github
+-by creating a PR(pull request)
+Pull Request-Pull Request (PR) is a feature used to propose changes from one branch to another.
+It is mainly used when working in teams.
+
+4)undoing changes
+Case I: staged changes ( after add .)
+-for undo the changes in few files -(git reset file_name)
+-for undo the changes in many file -(git reset)
+Case II: commit changes( after commit -m)
+-we have remove one changes from head (where last commit change is stored)-(git reset HEAD~1)
+-for undo many committed changes we use-(git reset hash_code)
+log screen contain the hash_code
+hash_code = every committed change have a specific hash value, we copy it 
+-to show reset changes in local repository we use , -(git reset -- hard hash_code)
